@@ -45,7 +45,9 @@ a:hover {
 
 #intro
 {
-    padding-bottom: 10rem;
+    padding: 4rem 1rem 10rem 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 #intro p
@@ -69,11 +71,19 @@ a:hover {
     font-size: 4rem;
     font-weight: normal;
 }
+.section-plum
+{
+    background-color: var(--plum);
+}
 
+.gradient
+{
+    background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+    height: 2px;
+}
 #contact
 {
-
-    background-color: var(--plum);
+    width: 400px;
     padding: 3rem 0;
     text-align: center;
     margin: 0 auto;
@@ -147,4 +157,53 @@ nav [class*="fa-"]:hover
 {
     color: var(--magenta);
 }
+
+.button
+{
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.button:hover
+{
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+@media (min-width: 850px)
+{
+    nav
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child
+    {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+footer
+{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 3rem;
+}
+
 
