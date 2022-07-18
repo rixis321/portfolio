@@ -99,6 +99,7 @@ img
     padding: 3rem 0;
     text-align: center;
     margin: 0 auto;
+
 }
 #contact h2
 {
@@ -235,13 +236,18 @@ nav [class*="fa-"]:hover
     border-radius: 25px;
     padding: 1rem;
 }
-@media(min-width: 550px)
+@media(min-width: 800px)
 {
     article
     {
         display: grid;
         grid-template-columns: repeat(10,1fr);
         gap: 1rem;
+    }
+    #projects
+    {
+        max-width: 1200px;
+        margin: 0 auto;
     }
     #projects img
     {
@@ -259,13 +265,31 @@ nav [class*="fa-"]:hover
     {
         justify-content: flex-end;
     }
+    #projects .reverse .text
+    {
+        order: 2;
+        text-align: left;
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    #projects .reverse img
+    {
+        grid-column: 6/11;
+        grid-row: 1/2;
+    }
+
+    #projects .reverse ul
+    {
+        justify-content: flex-start;
+    }
 }
 @media (min-width: 850px)
 {
     nav
     {
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
     nav li:first-child
     {
